@@ -22,7 +22,7 @@
             kubectl expose deployment petclinic --name petclinic --type NodePort --port 80 --target-port 8080
          fi
     - name: increase replicas 
-      shell: kubectl scale deploy petclinic --replicas=2
+      shell: kubectl scale deploy petclinic --replicas=4
       
     #- name: deploy app
     #  shell: kubectl create deployment petclinic --image=lerndevops/samplejavaapp:{{ build }}
